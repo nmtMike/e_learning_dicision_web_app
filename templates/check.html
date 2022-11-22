@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <h4>Let's check</h4>
+    <br>
+    <p>please fill out the form below and let us check</p>
+    
+    <form method="POST">
+        {{form.hidden_tag()}}
+        {{form.provider.label}} {{form.provider()}}
+        {{form.approach.label}} {{form.approach()}}
+        {{form.material.label}} {{form.material()}}
+        {{form.submit()}}
+    </form>
+
+</div>
+
+{% endblock %}
