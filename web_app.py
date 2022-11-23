@@ -42,6 +42,9 @@ def check():
     return render_template('check.html', form=form)
 
 
+@app.route('/about_us')
+def about():
+    return render_template('about_us.html')
 
 
 if __name__ == '__main__':

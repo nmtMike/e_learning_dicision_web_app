@@ -12,8 +12,7 @@
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="{{ url_for('index') }}">Home</a>
                 <a class="nav-item nav-link" href="{{ url_for('check') }}">CHECK</a>
-                <a class="nav-item nav-link" href=#>About us</a>
-                <a class="nav-item nav-link" href=#>References</a>
+                <a class="nav-item nav-link" href="{{ url_for('about') }}">About us</a>
             </div>
         </nav>
         {% block content %}
